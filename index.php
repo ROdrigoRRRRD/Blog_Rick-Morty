@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="Icon" href="./images/R&M.ico"/>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./Styles.css">
     <title>Blog:Rick and Morty</title>
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar" static-top>
         <a href="" class="logo"><img class="logo_img"src="./images/logo.png" alt=""></a>
         <input class="checkbox" type="checkbox" id="toggler">
         <label for="toggler"><img src="./images/menu.png" class="hambuergesa"></label>
         <div class="menu">
             <ul class="list">
-                <li class="opcion"><a href="#">Personajes</a></li>
+                <li class="opcion"><a href="Characters.php">Personajes</a></li>
                 <li class="opcion"><a href="./episodes.php">Capitulos</a></li>
                 <li class="opcion"><a href="#">Contact</a></li>
             </ul>
@@ -24,10 +24,10 @@
 
     <section class="Botones">
         <div>
-            <a class="texto_opcion" href="./episodes.php"><button class="Boton_Opcion">Capitulos</button></a> 
+            <a class="texto_opcion" href="./characters.php"><button class="Boton_Opcion">Personajes</button></a>
         </div>
         <div>
-            <a class="texto_opcion" href="./characters.php"><button class="Boton_Opcion">Personajes</button></a>
+            <a class="texto_opcion" href="./episodes.php"><button class="Boton_Opcion">Capitulos</button></a> 
         </div>
     </section>
 
@@ -47,7 +47,7 @@
             echo "<h1 class='Tittle_Cap'>$episodes->name</h1>";
             echo "<h4 class='air-Date'>$episodes->air_date</h4>";
         ?>  
-        <div class="recommendations-characters">
+        <div class="Characters_Episodes">
             <?php
                 for($i = 0; $i < $tamaño; $i++){
                     $chs = curl_init();
@@ -90,7 +90,7 @@
                         $cont = 0;
                         echo "</div>";
                         echo "<br></br>";
-                        echo "<div class='recommendations-characters'>";
+                        echo "<div class='Characters_Episodes'>";
                     }
                 }
             ?>

@@ -1,212 +1,366 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;600;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;600;800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;600&display=swap');
 
-:root{
-    --Medium-Blue-Grey: hsl(201, 65%, 88%);
-    --High-blue-Grey: hsl(203, 51%, 82%);
-}
-
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Roboto Slab', serif;
-    background-color: #17171F;
-}
-
-::-webkit-scrollbar {
-    width: 20px;
-    height: 20px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: linear-gradient( to bottom, #ff850a, #ff3474);
-    border-radius: 50px;
-}
-
-::-webkit-scrollbar-track {
-    background: #474747;
-    border-radius: 50px;
-    opacity: 50%;
-}
-
-.logo_img{
-    width: 60px;
-    margin-left: 10px;
-}
-
-.navbar {
-    margin: 0%;
-    width: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
-    background-color: var(--High-blue-Grey);
-}
-
-.navbar a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.logo {
-    margin-right: 50px;
-}
-
-.list {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-    margin-right: 10px;
-    font-size: 1.2em;
-}
-
-.opcion:hover{
-    color: rgb(241, 71, 28);
-}
-
-#toggler,
-.navbar label {
-    display: none;
-}
-
-.Botones{
-    display: flex;
-    margin: 30px 20px;
-    justify-content: space-between;
-}
-
-.Boton_Opcion{
-    display: block;
-    height: 80px;
-    min-width: 212px;
-    border-radius: 20px;
-    border: none;
-    font-size: 2em;
-    background-color: #242531;
-    cursor: pointer;
-    color: beige;
-}
-.Boton_Opcion:hover{
-    background: linear-gradient(135deg, hsla(350, 73%, 44%, 1) 0%, hsla(274, 64%, 12%, 1) 100%);
-    transition: 600ms;
-}
-
-.texto_opcion{  
-    text-decoration: none;
-}
-
-
-.cointeiner_cards{
-    padding: 15px;
-    min-width: 425px;
-    margin: 5px 20px;
-    border-radius: 30px;
-    background-color: #242531;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36);
-    border-radius: 24px;
-}
-
-.Tittle_Cap{
-    font-size: 3em;             
-    width: auto;
-    margin-top: 10px;
-    margin-left: 30px;
-    color: hsl(240, 32%, 90%);
-}
-
-.air-Date{
-    font-size: 1.3em;
-    width: auto;
-    margin-top: 10px;
-    margin-left: 30px;
-    color: hsl(240, 32%, 90%);
-    margin-bottom: 20px;
-}
-
-.recommendations-characters{
-    display: flex;
-}
-
-.characters_card{
-    background: linear-gradient(135deg, hsla(242, 58%, 73%, 1) 0%, hsla(157, 72%, 82%, 1) 100%);
-    height: auto;
-    width: 200px;
-    display: grid;
-    margin: 10px auto;
-    padding: 20px;
-    border-radius: 30px;
-}
-
-.characters_card:hover{
-    transition: 600ms;
-    background: linear-gradient(135deg, hsla(350, 73%, 44%, 1) 0%, hsla(274, 64%, 12%, 1) 100%);
-    color: #ffff;
-    box-shadow: 0 0 20px #000000;
-}
-
-
-.characters_img{
-    border-radius: 20px;
-    height: 150px;
-    margin: auto;
-}
-
-.characters_Inf{
-    margin: 10px 10px;
-    margin-bottom: 0;
-    font-size: .8em;
-}
-
-
-/*responsive*/
-
-@media screen and (max-width: 1066px) {
-    .menu {
-        width: 100%;
-        max-height: 0;
-        overflow: hidden;
+    :root{
+        --Medium-Blue-Grey: hsl(201, 65%, 88%);
+        --High-blue-Grey: hsl(203, 51%, 82%);
     }
-    .hamburguesa {
-        transform: rotate(-150);
+
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
     }
-    .list {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
+
+    body {
+        font-family: 'Roboto Slab', serif;
+        background-color: #17171F;
+        justify-content: center;
     }
-    .navbar label {
-        display: inline-flex;
-        align-items: right;
-        cursor: pointer;
+
+    ::-webkit-scrollbar {
+        width: 20px;
+        height: 20px;
     }
-    .icon-menu {
-        width: 30px;
-    }
-    .opcion:hover{
-        text-align: center;
+
+    ::-webkit-scrollbar-thumb {
+        background: linear-gradient( to bottom, #ff850a, #ff3474);
         border-radius: 50px;
-        height: 30px;
-        width: 100%;
-        background-color: rgba(151, 151, 151, 0.274);
     }
-    #toggler:checked~.menu {
-        max-height: 100%;
+
+    ::-webkit-scrollbar-track {
+        background: #474747;
+        border-radius: 50px;
+        opacity: 50%;
     }
-    #hambuergesa:checked~.menu {
-        transform: rotate(-90deg);
+
+    .logo_img{
+        width: 60px;
+        margin-left: 10px;
     }
+
+    .Logo_rickmorty{
+        width: 200px;
+    }
+
+    .navbar {
+        margin: 0%;
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+        background-color: var(--High-blue-Grey);
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .logo {
+        margin-right: 50px;
+    }
+
+    .list {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+        margin-right: 10px;
+        font-size: 1.2em;
+    }
+
+    .opcion:hover{
+        color: rgb(241, 71, 28);
+    }
+
     #toggler,
     .navbar label {
-        height: 30px;
-        border: 0px solid;
+        display: none;
     }
-    .recommendations-characters{
+
+    /*Page Home */
+
+    .Botones{
+        display: flex;
+        margin: 30px 20px;
+        justify-content: space-between;
+    }
+
+    .Boton_Opcion{
         display: block;
+        height: 80px;
+        min-width: 212px;
+        border-radius: 20px;
+        border: none;
+        font-size: 2em;
+        background-color: #242531;
+        cursor: pointer;
+        color: beige;
     }
-}
+    .Boton_Opcion:hover{
+        background: linear-gradient(135deg, hsla(350, 73%, 44%, 1) 0%, hsla(274, 64%, 12%, 1) 100%);
+        transition: 600ms;
+    }
+
+    .texto_opcion{  
+        text-decoration: none;
+    }
+
+
+    .cointeiner_cards{
+        padding: 15px;
+        min-width: 425px;
+        margin: 5px 20px;
+        border-radius: 30px;
+        background-color: #242531;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36);
+        border-radius: 24px;
+    }
+
+    .Tittle_Cap{
+        font-size: 3em;             
+        width: auto;
+        margin-top: 10px;
+        margin-left: 30px;
+        color: hsl(240, 32%, 90%);
+    }
+
+    .air-Date{
+        font-size: 1.3em;
+        width: auto;
+        margin-top: 10px;
+        margin-left: 30px;
+        color: hsl(240, 32%, 90%);
+        margin-bottom: 20px;
+    }
+
+    .Characters_Episodes{
+        display: flex;
+    }
+
+    .characters_card{
+        background: linear-gradient(135deg, hsla(242, 58%, 73%, 1) 0%, hsla(157, 72%, 82%, 1) 100%);
+        height: auto;
+        width: 200px;
+        display: grid;
+        margin: 10px auto;
+        padding: 20px;
+        border-radius: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .characters_card:hover{
+        transition: 600ms;
+        background: linear-gradient(135deg, hsla(350, 73%, 44%, 1) 0%, hsla(274, 64%, 12%, 1) 100%);
+        color: #ffff;
+        box-shadow: 0 0 20px #000000;
+    }
+
+
+    .characters_img{
+        border-radius: 20px;
+        height: 150px;
+        margin: auto;
+    }
+
+    .characters_Inf{
+        margin: 10px 10px;
+        margin-bottom: 0;
+        font-size: .8em;
+    }
+
+    /* Page Characters*/
+
+    /* .contador{
+        background-image: ;
+    } */
+    .botones{
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+        margin: 30px 25px;
+        min-width: 520px;
+    }
+
+    .descontar{
+        background-color: #c02929;
+        width: 100px;
+        height: 50px;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+        font: 0/0 a;
+        text-shadow: transparent;
+        color: transparent;
+        text-decoration: none;
+        background-image: url("./images/izquierda.png");
+        background-size: 50px;
+        background-repeat: no-repeat;
+        background-position-x: 23px;
+        background-position-y: 6px;
+        transition: 600ms;
+    }
+    .descontar:hover{
+        transition: 600ms;
+        background: linear-gradient(135deg, hsla(350, 73%, 44%, 1) 0%, hsla(274, 64%, 12%, 1) 100%);
+        background-image: url("./images/izquierda.png");
+        background-size: 50px;
+        background-repeat: no-repeat;
+        background-position-y: 6px;
+    }
+    .contador{
+        background-color: #c02929;
+        width: 100px;
+        height: 50px;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+        cursor: pointer;
+        font: 0/0 a;
+        text-shadow: transparent;
+        color: transparent;
+        text-decoration: none;
+        background-image: url("./images/derecha.png");
+        background-size: 50px;
+        background-repeat: no-repeat;
+        background-position-x: 27px;
+        background-position-y: 6px;
+        transition: 600ms;
+    }
+    .contador:hover{
+        transition: 600ms;
+        background: linear-gradient(135deg, hsla(350, 73%, 44%, 1) 0%, hsla(274, 64%, 12%, 1) 100%);
+        background-image: url("./images/derecha.png");
+        background-size: 50px;
+        background-repeat: no-repeat;
+        background-position-x: 45px;
+        background-position-y: 6px;
+    }
+    .contenido{
+        width: auto;
+        margin: 50px 30px;
+        justify-content: space-between;
+        border-radius: 27px;
+        background-color: #242531;
+        padding: 17px;
+        min-width: 515px;
+    }
+
+    .cards{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .Conteiner_Cap{
+        width: 79%;
+        border-radius: 27px;
+    }
+
+    .Characters_Cap{
+        display: flex;
+        border-radius: 27px;
+    }
+
+    .characters_randoms{
+        background-color: #333442;
+        display: block;
+        justify-content: right;
+        width: 20%;
+        margin-right: 0;
+        border-radius: 27px;
+        box-shadow: 0 0 10px #000000;
+        font-size: .8em;
+    }
+
+    .Recomendaciones{
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .Tittle_Recomendaciones{
+        color: hsl(240, 32%, 90%);
+        
+    }
+
+    .characters_card-Random{
+        margin-top: 50px;
+    }
+
+    /*Page 3*/
+    .Tittle-Page{
+        font-size: 3em;             
+        width: auto;
+        margin-top: 10px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+        color: hsl(240, 32%, 90%);
+    }
+    .Personajes{
+        background-color: #242531;
+        margin: 30px 20px;
+        border-radius: 27px;
+        padding: 30px;
+        min-width: 525px;
+    }
+
+    /*responsive*/
+
+    @media screen and (max-width: 1066px) {
+        .menu {
+            width: 100%;
+            max-height: 0;
+            overflow: hidden;
+        }
+        .hamburguesa {
+            transform: rotate(-150);
+
+        }
+        .list {
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .navbar label {
+            display: inline-flex;
+            align-items: right;
+            cursor: pointer;
+        }
+        .icon-menu {
+            width: 30px;
+        }
+        .opcion:hover{
+            text-align: center;
+            border-radius: 50px;
+            height: 30px;
+            width: 100%;
+            background-color: rgba(151, 151, 151, 0.274);
+        }
+        #toggler:checked~.menu {
+            max-height: 100%;
+        }
+        .Logo_rickmorty{
+            margin-left: 400px;
+        }
+        #hambuergesa:checked~.menu {
+            transform: rotate(-90deg);
+        }
+        .Characters_Episodes{
+            display: inline;
+        }
+        #toggler,
+        .navbar label {
+            height: 30px;
+            border: 0px solid;
+        }
+        .Characters_Cap{
+            display: inline;
+            width: 100%;
+        }
+        .characters_randoms{
+            width: 80%;
+            height: 2000px;
+        }
+    }
