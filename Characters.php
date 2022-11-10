@@ -17,7 +17,6 @@
             <ul class="list">
                 <li class="opcion"><a href="./Characters.php">Personajes</a></li>
                 <li class="opcion"><a href="./episodes.php">Capitulos</a></li>
-                <li class="opcion"><a href="#">Contact</a></li>
             </ul>
         </div>
     </nav>
