@@ -79,10 +79,11 @@
                     echo "<h1 class='characters-Name'>$personaje->name</h1>";
                     if($personaje->status == "Alive"){//
                         $personaje->status = "Vivo";
+                        echo "<p class='vivo'>Estado:&nbsp$personaje->status</p>";
                     } else {
                         $personaje->status = "Muerto";
+                        echo "<p class='muerto'>Estado:&nbsp$personaje->status</p>";
                     }
-                    echo "<p>Estado:&nbsp$personaje->status</p>";
                     if($personaje->type == NULL){
                     $personaje->type = "Humano";
                     }

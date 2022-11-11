@@ -152,7 +152,12 @@
         margin-bottom: 10px;
         transition: 600ms;
     }
-
+    .vivo{
+        color: rgb(54, 192, 54);
+    }
+    .muerto{
+        color: #e23939;
+    }
     .characters_card:hover{
         transition: 600ms;
         background: linear-gradient(135deg, hsla(350, 73%, 44%, 1) 0%, hsla(274, 64%, 12%, 1) 100%);
