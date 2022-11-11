@@ -1,5 +1,4 @@
     @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;600;800&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;600&display=swap');
 
     :root{
         --Medium-Blue-Grey: hsl(201, 65%, 88%);
@@ -91,13 +90,14 @@
     .Boton_Opcion{
         display: block;
         height: 80px;
-        min-width: 212px;
+        width: 212px;
         border-radius: 20px;
         border: none;
         font-size: 2em;
         background-color: #242531;
         cursor: pointer;
         color: beige;
+        font-family: 'Roboto Slab', serif;
     }
     .Boton_Opcion:hover{
         background: linear-gradient(135deg, hsla(350, 73%, 44%, 1) 0%, hsla(274, 64%, 12%, 1) 100%);
@@ -111,7 +111,7 @@
 
     .cointeiner_cards{
         padding: 15px;
-        min-width: 425px;
+        min-width: 200px;
         margin: 5px 20px;
         border-radius: 30px;
         background-color: #242531;
@@ -150,6 +150,7 @@
         border-radius: 30px;
         margin-top: 10px;
         margin-bottom: 10px;
+        transition: 600ms;
     }
 
     .characters_card:hover{
@@ -180,9 +181,8 @@
     .botones{
         display: flex;
         justify-content: space-between;
-        width: auto;
         margin: 30px 25px;
-        min-width: 520px;
+        min-width: 350px;
     }
 
     .descontar{
@@ -246,7 +246,7 @@
         border-radius: 27px;
         background-color: #242531;
         padding: 17px;
-        min-width: 515px;
+        min-width: 340px;
     }
 
     .cards{
@@ -360,7 +360,32 @@
             width: 100%;
         }
         .characters_randoms{
-            width: 80%;
+            width: 340px;
             height: 2000px;
+        }
+        .Tittle-Page{
+            font-size: 2em;            
+        }
+        .Tittle_Cap{
+            font-size: 2em;
+        }
+        .Personajes{
+            min-width: 400px;
+        }
+        .Boton_Opcion{
+            width: 180px;
+            font-size: 16px;
+        }
+        .air-Date{
+            font-size: 1em;
+        }
+        .Conteiner_Cap{
+            width: 100%;
+        }   
+        .cards{
+            display: inline;
+        }
+        .contenido{
+
         }
     }
