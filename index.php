@@ -23,7 +23,7 @@
 
     <section class="Botones">
         <div>
-            <a class="texto_opcion" href="./characters.php"><button class="Boton_Opcion">Personajes</button></a>
+            <a class="texto_opcion" href="./Characters.php"><button class="Boton_Opcion">Personajes</button></a>
         </div>
         <div>
             <a class="texto_opcion" href="./episodes.php"><button class="Boton_Opcion">Capitulos</button></a> 
