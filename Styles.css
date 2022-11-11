@@ -362,6 +362,8 @@
         .characters_randoms{
             width: 310px;
             height: 2000px;
+            padding: 5px;
+            margin-left: 10px;
         }
         .Tittle-Page{
             font-size: 2em;            
@@ -385,7 +387,7 @@
         .cards{
             display: inline;
         }
-        .contenido{
-
+        .Tittle_Recomendaciones{
+            margin-top: 30px;
         }
     }
